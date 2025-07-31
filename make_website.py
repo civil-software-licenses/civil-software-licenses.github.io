@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 
 # Output directory for the static website
 output_dir = ""
@@ -510,10 +511,11 @@ This section will be updated should a consensus emerge in the courts.
     },
     "about.html": {
         "title": "About",
-        "content": """
+        "content": f"""
 <h1>About</h1>
 <p>Civil Software Licenses were developed by <a href="https://kait0.github.io/">Bernhard Jaeger</a> and <a href="https://www.cvlibs.net/">Andreas Geiger</a>.</p>
 <p>If you have feedback please contact us via <a href="mailto:bernhard.jaeger@uni-tuebingen.de">Email</a>.</p>
+Last updated: {datetime.now().strftime("%d-%B-%Y")}
 """
     }
 }

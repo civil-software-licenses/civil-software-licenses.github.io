@@ -54,6 +54,7 @@ base_template = """<!DOCTYPE html>
 <body>
     <nav>
         <a href="index.html">Home</a>
+        <a href="licenses.html">Example Licenses</a>
         <a href="qa.html">Q&A</a>
         <a href="about.html">About</a>
     </nav>
@@ -69,9 +70,197 @@ pages = {
     "index.html": {
         "title": "Civil Software Licenses",
         "content": """
-<h1>Welcome to Civil Software Licenses</h1>
-<p>This project aims to catalog and analyze software licenses relevant to civil and government software systems. Our goal is to provide clarity, accessibility, and compliance tools to legal and development teams.</p>
-<p><a href="civil_software_licenses.pdf" target="_blank">📄 Download Civil Licenses PDF</a></p>
+<h1>Civil Software Licenses</h1>
+    <p>
+    This websites presents a set of licenses referred to as <strong>Civil Software Licenses</strong>. Civil software licenses are characterized by containing the following <strong>Civil Clause</strong>, which prohibits the use of the licensed software in the development or construction of any type of weapon:
+      
+      <blockquote>
+      <strong>Civil Clause v1:</strong> This work is provided under the condition that it and any derivatives may not be used in or built into weapons and may not be sold to or used by entities legally authorized to initiate force against persons. Any derivative work’s license must include this clause and may not conflict with it. This clause applies to all sublicensees.
+      </blockquote>
+    
+     The civil cluase states that software distributed under these licenses may neither be sold to nor utilized by entities or institutions that possess the legal authority to employ weaponry, including, but not limited to, military organizations. The Civil Clause further permits the creation of derivative works through a copyleft mechanism, whereby any such derivative work must be distributed under a license that includes the Civil Clause in its entirety and excludes any provisions that contradict or undermine it. <br><br>
+     Licenses that incorporate the Civil Clause and otherwise conform to the criteria established for open source software are herein referred to as <strong>Civil Open Source Licenses</strong>.
+    We propose <a href="licenses.html">two instances</a> of such licenses, the Civil-M license, which constitutes a civil adaptation of the MIT License, and the Civil-A license, which constitutes a civil adaptation of the Apache 2.0 license.
+     <br><br>
+    This website discusses the rationale underlying the development of these licenses, the guiding principles of their design, and a answers a range of <a href="qa.html">related questions</a>, including the mechanisms through which these licenses may be enforced.
+    </p>
+<p>The content of this website is also available as PDF: </p>
+<p>📄 <a href="civil_software_licenses.pdf" target="_blank">Civil Licenses PDF</a></p>
+
+<h2>Motivation</h2>
+Software developers who publish software are required to incorporate a license that delineates the permitted uses of the software and specifies the conditions under which such uses are authorized.
+<br><br>
+Developers who do not intend to monetize their software and instead seek to contribute to the public good typically employ free/open-source software licenses.
+Such licenses generally impose no restrictions on usage, typically requiring only attribution as a condition of use.
+In certain instances, these licenses employ copyleft provisions to ensure that derivative works confer the same rights to users as those granted by the original work.
+<br><br>
+Where a software developer seeks to restrict certain lawful uses of their software, these licenses are inappropriate as they expressly prohibit such restrictions by their definition.
+<br><br>
+This website examines the specific circumstance wherein a software developer wishes to restrict the dual-use of their software or other applications that utilize the software to inflict lawful physical violence upon other persons.
+<br><br>
+Currently, no suitable standardized licenses exist for developers' use, requiring them either to draft custom licenses, which creates legal overhead for themselves and others, or to permit dual-use through open source licenses despite their intention to prevent such applications.
+<br><br>
+We propose a set of licenses designated Civil Software Licenses to address this problem.
+We define a software license as a Civil Software License if it incorporates the Civil Clause above within the license terms and contains no conflicting provisions.
+
+<h2>Autonomous Weapons</h2>
+Modern software, particularly software utilizing artificial intelligence, has the potential to render weapons fully autonomous, capable of lethal action without human oversight.
+Such weapons are ethically questionable and have the potential to become an existential threat to humanity in the long term.
+There is growing concern about such autonomous lethal systems and several <a href="https://www.stopkillerrobots.org/news/2024-nobel-laureate-in-physics-raises-concerns-about-killer-robots/">political efforts</a> to halt or impede their development.
+Civil software licenses may contribute to these efforts by rendering open software unavailable for weapon construction, thereby increasing costs and consequently impeding the development of autonomous lethal systems.
+"""
+    },
+    "licenses.html": {
+        "title": "Example Licenses",
+        "content": """
+<h1>Example Licenses</h1>
+<p>We designate software whose license incorporates the civil clause and, with the exception of the civil clause, conforms to the conventional <a href="https://opensource.org/osd">open source definition</a> as "civil open source."
+The following constitutes two examples of civil open source licenses.</p>
+<p>If there are further licenses that you would like us to add to the list please contact us.</p>
+<div class="faq">
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Civil-M License</button>
+        <div class="faq-answer" hidden>This represents a civil adaptation of the Expat License (commonly known as the MIT license).
+It should be noted that our software license is neither endorsed by nor affiliated with the MIT institution.
+The objective of this license is to achieve maximum brevity, thereby enabling software developers to rapidly comprehend the requirements applicable to a software repository:
+<br><br>
+<hr>
+Copyright &lt;YEAR&gt; &lt;COPYRIGHT HOLDER&gt;
+<br><br>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+<br><br>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+<br><br>
+Civil Clause v1: This work is provided under the condition that it and any derivatives may not be used in or built into weapons and may not be sold to or used by entities legally authorized to initiate force against persons. Any derivative work’s license must include this clause and may not conflict with it. This clause applies to all sublicensees.
+<br><br>
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+<hr>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Civil-A License</button>
+        <div class="faq-answer" hidden> This is a Civil version of the Apache 2.0 license.
+Compared to the Civil-M license, it is more comprehensive in its description and contains protection against patent issues, so it is recommended for more complex software projects and companies:
+<br><br>
+<hr>
+Copyright [yyyy] [name of copyright owner]
+<br><br>
+Licensed under the Civil-A License (the "License");
+You may not use this file except in compliance with the License.
+<br><br>
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+<br><br>
+1. Definitions.
+<br><br>
+"License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 10 of this document.
+<br><br>
+"Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+<br><br>
+"Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+<br><br>
+"You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.
+<br><br>
+"Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+<br><br>
+"Object" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+<br><br>
+"Work" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).
+<br><br>
+"Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+<br><br>
+"Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."
+<br><br>
+"Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+<br><br>
+2. Grant of Copyright License. Subject to the terms and conditions of this License including the Civil Clause below, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.
+<br><br>
+3. Grant of Patent License. Subject to the terms and conditions of this License including the Civil Clause below, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+<br><br>
+4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+<br><br>
+    You must give any other recipients of the Work or Derivative Works a copy of this License; and
+    You must cause any modified files to carry prominent notices stating that You changed the files; and
+    You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+    If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
+<br><br>
+You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
+<br><br>
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
+<br><br>
+6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
+<br><br>
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+<br><br>
+8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+<br><br>
+9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
+<br><br>
+10. Civil Clause v1: This work is provided under the condition that it and any derivatives may not be used in or built into weapons and may not be sold to or used by entities legally authorized to initiate force against persons. Any derivative work’s license must include this clause and may not conflict with it. This clause applies to all sublicensees.
+<br><br>
+END OF TERMS AND CONDITIONS
+<hr>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll(".faq-question").forEach(button => {
+        button.addEventListener("click", () => {
+            const answer = button.nextElementSibling;
+            const isOpen = button.getAttribute("aria-expanded") === "true";
+
+            button.setAttribute("aria-expanded", !isOpen);
+            answer.hidden = isOpen;
+        });
+    });
+</script>
+
+<style>
+    .faq-item {
+        margin-bottom: 20px;
+    }
+
+    .faq-question {
+        background-color: #ffffff;
+        color: #2c3e50;
+        border: 1px solid #ccc;
+        padding: 14px 18px;
+        width: 100%;
+        text-align: left;
+        font-size: 1.05rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .faq-question:hover {
+        background-color: #f2f2f2;
+        border-color: #1abc9c;
+    }
+
+    .faq-question[aria-expanded="true"] {
+        border-color: #1abc9c;
+        background-color: #f9fdfd;
+    }
+
+    .faq-answer {
+        margin-top: 10px;
+        padding: 12px 18px;
+        background-color: #fefefe;
+        border-left: 4px solid #1abc9c;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        font-size: 1rem;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
 """
     },
     "qa.html": {
@@ -148,8 +337,8 @@ In such circumstances, the company is selling the application specifically to th
         <button class="faq-question" aria-expanded="false">Are civil software licenses free software licenses?</button>
         <div class="faq-answer" hidden>
         The most commonly recognized definition of free software is that provided by the <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software Foundation</a>. The philosophy underlying this concept seeks to maximize the freedoms of software users.
-One of the fundamental principles of free software licenses is that they grant users the freedom to run the program as they wish, \textbf{for any purpose}.
-This represents a comprehensive conception of freedom that prioritizes the freedom of \textbf{the software user} above all other considerations.
+One of the fundamental principles of free software licenses is that they grant users the freedom to run the program as they wish, <strong>for any purpose</strong>.
+This represents a comprehensive conception of freedom that prioritizes the freedom of <strong>the software user</strong>. above all other considerations.
 Civil software licenses restrict users from constructing weapons with the software, and as such, do not qualify as free licenses under the Free Software Foundation's definition.
 Civil software licenses protect, to some extent, the freedom of individuals upon whom the software is used, given that one purpose of weapons is to curtail the freedom (or life) of those against whom the weapon is deployed.
 A design philosophy underlying civil software is also to minimize the restrictions imposed by the license to the absolute minimum, thereby respecting the user's time and freedoms.
@@ -320,10 +509,11 @@ This section will be updated should a consensus emerge in the courts.
 """
     },
     "about.html": {
-        "title": "About - Civil Software Licenses",
+        "title": "About",
         "content": """
-<h1>About Civil Software Licenses</h1>
-<p>This site bridges the gap between legal frameworks and software development for civil systems. Created by a team of researchers and policy experts, it promotes clarity and open access to software licensing knowledge.</p>
+<h1>About</h1>
+<p>Civil Software Licenses were developed by <a href="https://kait0.github.io/">Bernhard Jaeger</a> and <a href="https://www.cvlibs.net/">Andreas Geiger</a>.</p>
+<p>If you have feedback please contact us via <a href="mailto:bernhard.jaeger@uni-tuebingen.de">Email</a>.</p>
 """
     }
 }

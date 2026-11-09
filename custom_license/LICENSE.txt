@@ -227,8 +227,28 @@ its Derivatives in violation of them:
    derivative work’s license must include this clause and may not conflict with
    it. This clause applies to all sublicensees.
 
-   In this License, “work” in the Civil Clause v1 above means the Artifact,
-   “derivatives” and “derivative work” mean Derivatives, and “sublicensees”
-   includes all Third Party recipients of the Artifact or its Derivatives.
+2. Notice of Commercial Use: You may incorporate this work or its derivatives
+   into, or use them to provide, a product or service that You make available to
+   third parties for a fee or other commercial advantage only if You notify
+   KE:SAI — Kyutai ELLIS Scalable Autonomous Intelligence gGmbH (“KE:SAI”)
+   within ninety (90) days after You first make the product or service available
+   in that form or, if later, within thirty (30) days after KE:SAI requests the
+   notice in writing. The notice must state Your name, the work(s) or
+   derivative(s) used and a contact address. Describing the product or service
+   is optional. The notice is given through the form published at
+   [NOTIFICATION URL] or, if no such form is available, to the contact address
+   published at https://kesai.eu/imprint/. One notice per product or service is
+   sufficient. No notice is required for research, evaluation, teaching,
+   personal or other non-commercial use, for making this work or its derivatives
+   available free of charge, or for the use of a product or service as an end
+   user. KE:SAI may use the notified information to document the adoption of
+   this work, may share it with its donors, prospective donors, funders and
+   auditors, and may publish it in aggregated form. Public identification of You
+   requires Your consent.
 
 [FURTHER USE RESTRICTIONS TO BE ADDED]
+
+In this License, “work” in this Attachment A means the Artifact, “derivatives”
+and “derivative work” mean Derivatives, “third parties” means Third Parties, and
+“sublicensees” includes all Third Party recipients of the Artifact or its
+Derivatives.

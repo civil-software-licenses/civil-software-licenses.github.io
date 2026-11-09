@@ -1,22 +1,33 @@
-Changes in LICENSE.txt relative to: LICENSE.txt as committed in 68ad09e (2026-11-09, "Add initial openrail template.")
+Changes in LICENSE.txt relative to: LICENSE.txt as committed in f827009 (2026-11-09, "add civil clause to OpenRAIL license.")
 Generated 2026-11-09 by changes.sh. Markup: [-removed-] {+added+}
 
----- line 218 ---- Attachment A
-Use Restrictions
+---- line 228 ---- its Derivatives in violation of them:
+   it. This clause applies to all sublicensees.
 
-You agree [-not-]{+that the Artifact and its Derivatives are subject+} to [-use-]{+the following+}
-{+Use-based restrictions and that You shall not Use or Distribute+} the Artifact or
-its Derivatives in [-any-]{+violation+} of [-the following-]
-[-ways:-]{+them:+}
+[-In-]{+2. Notice of Commercial Use: You may incorporate+} this [-License, “work”-]{+work or its derivatives+}
+{+   into, or use them to provide, a product or service that You make available to+}
+{+   third parties for a fee or other commercial advantage only if You notify+}
+{+   KE:SAI — Kyutai ELLIS Scalable Autonomous Intelligence gGmbH (“KE:SAI”)+}
+{+   within ninety (90) days after You first make the product or service available+}
+   in {+that form or, if later, within thirty (30) days after KE:SAI requests+} the
+   [-Civil Clause v1 above means-]{+notice in writing. The notice must state Your name,+} the [-Artifact,-]
+[-   “derivatives” and “derivative work” mean Derivatives,-]{+work(s) or+}
+{+   derivative(s) used+} and [-“sublicensees”-]
+[-   includes all Third Party recipients-]{+a contact address. Describing the product or service+}
+{+   is optional. The notice is given through the form published at+}
+{+   [NOTIFICATION URL] or, if no such form is available, to the contact address+}
+{+   published at https://kesai.eu/imprint/. One notice per product or service is+}
+{+   sufficient. No notice is required for research, evaluation, teaching,+}
+{+   personal or other non-commercial use, for making this work or its derivatives+}
+{+   available free+} of {+charge, or for+} the [-Artifact-]{+use of a product+} or {+service as an end+}
+{+   user. KE:SAI may use the notified information to document the adoption of+}
+{+   this work, may share it with+} its [-Derivatives.-]{+donors, prospective donors, funders and+}
+{+   auditors, and may publish it in aggregated form. Public identification of You+}
+{+   requires Your consent.+}
 
-[-[USE-]{+1. Civil Clause v1: This work is provided under the condition that it and any+}
-{+   derivatives may not be used in or built into weapons and may not be sold to+}
-{+   or used by entities legally authorized to initiate force against persons. Any+}
-{+   derivative work’s license must include this clause and may not conflict with+}
-{+   it. This clause applies to all sublicensees.+}
+[FURTHER USE RESTRICTIONS TO BE ADDED]
 
-{+   In this License, “work” in the Civil Clause v1 above means the Artifact,+}
-{+   “derivatives” and “derivative work” mean Derivatives, and “sublicensees”+}
-{+   includes all Third Party recipients of the Artifact or its Derivatives.+}
-
-{+[FURTHER USE+} RESTRICTIONS TO BE ADDED]
+{+In this License, “work” in this Attachment A means the Artifact, “derivatives”+}
+{+and “derivative work” mean Derivatives, “third parties” means Third Parties, and+}
+{+“sublicensees” includes all Third Party recipients of the Artifact or its+}
+{+Derivatives.+}

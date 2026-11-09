@@ -1,0 +1,50 @@
+Changes in LICENSE.txt relative to: openrail_template.txt (unmodified OpenRAIL template, note header excluded)
+Generated 2026-11-09 by changes.sh. Markup: [-removed-] {+added+}
+
+---- line 221 ---- You agree not to use the Artifact or its Derivatives in any of the following
+ways:
+
+[-1. Discrimination-]
+[-   (a) To discriminate or exploit individuals or groups based on legally-]
+[-       protected characteristics and/or vulnerabilities.-]
+[-   (b) For purposes of administration of justice, law enforcement, immigration,-]
+[-       or asylum processes, such as predicting that a natural person will commit-]
+[-       a crime or the likelihood thereof.-]
+
+[-2. Military-]
+[-   (a) For weaponry or warfare.-]
+
+[-3. Legal-]
+[-   (a) To engage or enable fully automated decision-making that adversely-]
+[-       impacts a natural person's legal rights without expressly and-]
+[-       intelligibly disclosing the impact to such natural person and providing-]
+[-       an appeal process.-]
+[-   (b) To engage or enable fully automated decision-making that creates,-]
+[-       modifies or terminates a binding, enforceable obligation between-]
+[-       entities; whether these include natural persons or not.-]
+
+[-4. Disinformation-]
+[-   (a) To create, present or disseminate verifiably false or misleading-]
+[-       information for economic gain or to intentionally deceive the public,-]
+[-       including creating false impersonations of natural persons.-]
+[-   (b) To synthesize or modify a natural person's appearance, voice, or other-]
+[-       individual characteristics, unless prior informed consent of said natural-]
+[-       person is obtained.-]
+[-   (c) To autonomously interact with a natural person, in text or audio format,-]
+[-       unless disclosure and consent is given prior to interaction that the-]
+[-       system engaging in the interaction is not a natural person.-]
+
+[-5. Privacy-]
+[-   (a) To utilize personal information to infer additional personal information-]
+[-       about a natural person, including but not limited to legally protected-]
+[-       characteristics, vulnerabilities or categories; unless informed consent-]
+[-       from the data subject to collect said inferred personal information for a-]
+[-       stated purpose and defined duration is received.-]
+
+[-6. Health-]
+[-   (a) To provide medical advice or make clinical decisions without necessary-]
+[-       (external) accreditation of the system; unless the use is (i) in an-]
+[-       internal research context with independent and accountable oversight-]
+[-       and/or (ii) with medical professional oversight that is accompanied by-]
+[-       any related compulsory certification and/or safety/quality standard for-]
+[-       the implementation of the technology.-]{+[USE RESTRICTIONS TO BE ADDED]+}

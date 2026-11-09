@@ -217,7 +217,18 @@ Attachment A
 
 Use Restrictions
 
-You agree not to use the Artifact or its Derivatives in any of the following
-ways:
+You agree that the Artifact and its Derivatives are subject to the following
+Use-based restrictions and that You shall not Use or Distribute the Artifact or
+its Derivatives in violation of them:
 
-[USE RESTRICTIONS TO BE ADDED]
+1. Civil Clause v1: This work is provided under the condition that it and any
+   derivatives may not be used in or built into weapons and may not be sold to
+   or used by entities legally authorized to initiate force against persons. Any
+   derivative work’s license must include this clause and may not conflict with
+   it. This clause applies to all sublicensees.
+
+   In this License, “work” in the Civil Clause v1 above means the Artifact,
+   “derivatives” and “derivative work” mean Derivatives, and “sublicensees”
+   includes all Third Party recipients of the Artifact or its Derivatives.
+
+[FURTHER USE RESTRICTIONS TO BE ADDED]

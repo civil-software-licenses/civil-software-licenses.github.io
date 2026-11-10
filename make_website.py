@@ -1,8 +1,43 @@
 import os
+import re
 from datetime import datetime
+from html import escape
 
 # Output directory for the static website
 output_dir = ""
+
+
+def license_text_to_html(path):
+    """Convert a hard-wrapped plain-text license file into the HTML used on the
+    licenses page: wrapped lines are joined, paragraphs are separated by
+    <br><br> and list items within a paragraph by <br>."""
+    with open(path, encoding="utf-8") as f:
+        blocks = f.read().strip().split("\n\n")
+    list_marker = re.compile(r"(-|\d+\.|\([a-z]\)) ")
+
+    def indent(line):
+        return len(line) - len(line.lstrip())
+
+    paragraphs = []
+    for block in blocks:
+        lines = block.split("\n")
+        # A list is either a run of marked lines at the indentation of the first
+        # line, or marked lines indented below an unmarked heading line. Every
+        # other line continues the wrapped line before it.
+        in_list = list_marker.match(lines[0].lstrip()) is not None
+        items = [lines[0].strip()]
+        for line in lines[1:]:
+            is_marked = list_marker.match(line.lstrip()) is not None
+            if in_list:
+                starts_item = is_marked and indent(line) == indent(lines[0])
+            else:
+                starts_item = is_marked and indent(line) > indent(lines[0])
+            if starts_item:
+                items.append(line.strip())
+            else:
+                items[-1] += " " + line.strip()
+        paragraphs.append("<br>\n".join(escape(item, quote=False) for item in items))
+    return "\n<br><br>\n".join(paragraphs)
 
 # Base HTML template with centered top menu
 base_template = """<!DOCTYPE html>
@@ -116,11 +151,12 @@ Civil software licenses may contribute to these efforts by rendering open softwa
         "content": """
 <h1>Example Licenses</h1>
 <p>We designate software whose license incorporates the civil clause and, with the exception of the civil clause, conforms to the conventional <a href="https://opensource.org/osd">open source definition</a> as "civil open source."
-The following constitutes two examples of civil open source licenses.</p>
+The following constitutes two examples of civil open source licenses.
+In addition, we provide the Civil OpenRAIL-MS license, a civil software license for machine learning models.</p>
 <p>If there are further licenses that you would like us to add to the list please contact us.</p>
 <div class="faq">
     <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">Civil-M License</button>
+        <button class="faq-question" aria-expanded="false">Civil-M License (based on MIT)</button>
         <div class="faq-answer" hidden>This represents a civil adaptation of the Expat License (commonly known as the MIT license).
 It should be noted that our software license is neither endorsed by nor affiliated with the MIT institution.
 The objective of this license is to achieve maximum brevity, thereby enabling software developers to rapidly comprehend the requirements applicable to a software repository:
@@ -139,7 +175,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
         </div>
     </div>
     <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">Civil-A License</button>
+        <button class="faq-question" aria-expanded="false">Civil-A License (based on Apache 2.0)</button>
         <div class="faq-answer" hidden> This is a Civil version of the Apache 2.0 license.
 Compared to the Civil-M license, it is more comprehensive in its description and contains protection against patent issues, so it is recommended for more complex software projects and companies:
 <br><br>
@@ -199,6 +235,18 @@ You may add Your own copyright statement to Your modifications and may provide a
 10. Civil Clause v1: This work is provided under the condition that it and any derivatives may not be used in or built into weapons and may not be sold to or used by entities legally authorized to initiate force against persons. Any derivative work’s license must include this clause and may not conflict with it. This clause applies to all sublicensees.
 <br><br>
 END OF TERMS AND CONDITIONS
+<hr>
+        </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Civil OpenRAIL-MS License</button>
+        <div class="faq-answer" hidden>This is a Civil version of the OpenRAIL-MS license template of the <a href="https://www.licenses.ai/">Responsible AI Licenses (RAIL) initiative</a>, intended for machine learning models and their source code.
+RAIL are a family of licenses specifically designed to add use based restrictions like the civil clause.
+It should be noted that our license is neither endorsed by nor affiliated with the RAIL initiative.
+The license text is reproduced below and is also available as a <a href="civil_openrail_ms.txt" target="_blank">plain text file</a>:
+<br><br>
+<hr>
+""" + license_text_to_html("civil_openrail_ms.txt") + """
 <hr>
         </div>
     </div>
@@ -514,7 +562,7 @@ This section will be updated should a consensus emerge in the courts.
         "content": f"""
 <h1>About</h1>
 <p>Civil Software Licenses were developed by <a href="https://kait0.github.io/">Bernhard Jaeger</a> and <a href="https://www.cvlibs.net/">Andreas Geiger</a>.</p>
-<p>If you have feedback please contact us via <a href="mailto:bernhard.jaeger@uni-tuebingen.de">Email</a>.</p>
+<p>If you have feedback please contact us via <a href="mailto:bernhard@kesai.eu">Email</a>.</p>
 Last updated: {datetime.now().strftime("%d-%B-%Y")}
 """
     }

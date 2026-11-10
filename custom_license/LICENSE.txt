@@ -1,14 +1,8 @@
-[LICENSE NAME] OpenRAIL-MS
+Civil OpenRAIL-MS
 
 Licensed Artifact(s):
    - Model
    - Source Code
-
-NOTE: The primary difference between a RAIL and OpenRAIL license is that the
-RAIL license does not require the licensee to have royalty-free use of the
-relevant artifact(s), nor does the RAIL license necessarily permit modifications
-to the artifact(s). Both RAIL and OpenRAIL licenses include use restrictions
-prohibiting certain uses of the licensed artifact(s).
 
 Section I: PREAMBLE
 
@@ -16,8 +10,6 @@ This OpenRAIL License is generally applicable to the Artifact(s) identified
 above.
 
 For valuable consideration, You and Licensor agree as follows:
-
-NOW THEREFORE, You and Licensor agree as follows:
 
 1. Definitions
 
@@ -30,7 +22,7 @@ NOW THEREFORE, You and Licensor agree as follows:
     format), Model, and/or Source Code, in accordance with what is specified
     above as the “Licensed Artifact”.
 
-(c) ”Contribution" means any work, including any modifications or additions to
+(c) “Contribution” means any work, including any modifications or additions to
     an Artifact, that is intentionally submitted to Licensor for inclusion or
     incorporation in the Artifact directly or indirectly by the rights owner.
     For the purposes of this definition, “submitted” means any form of
@@ -136,7 +128,7 @@ Section III: CONDITIONS OF USAGE, DISTRIBUTION AND REDISTRIBUTION
    License. You shall require all of Your users who use the Artifact or its
    Derivative to comply with the terms of this paragraph.
 
-5. The Output You Generate with a Model (as Artfact). Except as set forth
+5. The Output You Generate with a Model (as Artifact). Except as set forth
    herein, Licensor claims no rights in the Output You generate. You are
    accountable for the Output You generate and its subsequent uses. No use of
    the Output may contravene any provision as stated in this License.
@@ -207,9 +199,9 @@ Section IV: OTHER PROVISIONS
     earlier of (a) Your acceptance of this License or (b) accessing the
     Artifact; and will continue in full force and effect until terminated in
     accordance with the terms and conditions herein. Licensor may terminate this
-    License if You are in breach of any term or condition of this Agreement.
-    Upon termination of this Agreement, You shall delete and cease use of the
-    Artifact. Section 10 shall survive the termination of this License.
+    License if You are in breach of any term or condition of this License. Upon
+    termination of this License, You shall delete and cease use of the Artifact.
+    Section 10 shall survive the termination of this License.
 
 END OF TERMS AND CONDITIONS
 
@@ -235,20 +227,17 @@ its Derivatives in violation of them:
    in that form or, if later, within thirty (30) days after KE:SAI requests the
    notice in writing. The notice must state Your name, the work(s) or
    derivative(s) used and a contact address. Describing the product or service
-   is optional. The notice is given through the form published at
-   [NOTIFICATION URL] or, if no such form is available, to the contact address
-   published at https://kesai.eu/imprint/. One notice per product or service is
-   sufficient. No notice is required for research, evaluation, teaching,
-   personal or other non-commercial use, for making this work or its derivatives
-   available free of charge, or for the use of a product or service as an end
-   user. KE:SAI may use the notified information to document the adoption of
-   this work, may share it with its donors, prospective donors, funders and
-   auditors, and may publish it in aggregated form. Public identification of You
-   requires Your consent.
+   is optional. The notice is given by email to notice@kesai.eu or, if that
+   address cannot be reached, to the contact address published at
+   https://kesai.eu/imprint/. One notice per product or service is sufficient.
+   No notice is required for research, evaluation, teaching, personal or other
+   non-commercial use, for making this work or its derivatives available free of
+   charge, or for the use of a product or service as an end user. KE:SAI may use
+   the notified information to document the adoption of this work, may share it
+   with its donors, prospective donors, funders and auditors, and may publish it
+   in aggregated form. Public identification of You requires Your consent.
 
-[FURTHER USE RESTRICTIONS TO BE ADDED]
-
-In this License, “work” in this Attachment A means the Artifact, “derivatives”
-and “derivative work” mean Derivatives, “third parties” means Third Parties, and
+As used in this Attachment A, “work” means the Artifact, “derivatives” and
+“derivative work” mean Derivatives, “third parties” means Third Parties, and
 “sublicensees” includes all Third Party recipients of the Artifact or its
 Derivatives.
